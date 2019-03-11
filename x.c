@@ -719,7 +719,7 @@ sixd_to_16bit(int x)
 
 const char* getcolorname(int i)
 {
-    return (usealtcolors) ?  altcolorname[i] : colorname[i];
+    return colorname[i];
 }
 
 int
@@ -757,7 +757,7 @@ xloadcols(void)
 		for (cp = dc.col; cp < &dc.col[dc.collen]; ++cp)
 			XftColorFree(xw.dpy, xw.vis, xw.cmap, cp);
 	} else {
-		dc.collen = MAX(LEN(colorname), LEN(altcolorname));
+		dc.collen = LEN(colorname);
 		dc.col = xmalloc(dc.collen * sizeof(Color));
 	}
 
