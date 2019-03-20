@@ -97,25 +97,40 @@ unsigned int tabspaces = 4;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
   /* 8 normal colors */
-  [0] = "#090909", /* black   */
-  [1] = "#d34341", /* red     */
-  [2] = "#3a9900", /* green   */
-  [3] = "#eec335", /* yellow  */
-  [4] = "#268bd2", /* blue    */
-  [5] = "#d33268", /* magenta */
-  [6] = "#2aa198", /* cyan    */
-  [7] = "#efefef", /* white   */
+  /* [0] = "#090909", /1* black   *1/ */
+  /* [1] = "#d34341", /1* red     *1/ */
+  /* [2] = "#3a9900", /1* green   *1/ */
+  /* [3] = "#eec335", /1* yellow  *1/ */
+  /* [4] = "#268bd2", /1* blue    *1/ */
+  /* [5] = "#d33268", /1* magenta *1/ */
+  /* [6] = "#2aa198", /1* cyan    *1/ */
+  /* [7] = "#efefef", /1* white   *1/ */
 
-  /* 8 bright colors */
-  [8]  = "#002b36", /* black   */
-  [9]  = "#cb4b16", /* red     */
-  [10] = "#5e7655", /* green   */
-  [11] = "#d8c081", /* yellow  */
-  [12] = "#438f98", /* blue    */
-  [13] = "#6c71c4", /* magenta */
-  [14] = "#769e9e", /* cyan    */
-  [15] = "#ffffff", /* white   */
-
+  /* /1* 8 bright colors *1/ */
+  /* [8]  = "#002b36", /1* black   *1/ */
+  /* [9]  = "#cb4b16", /1* red     *1/ */
+  /* [10] = "#5e7655", /1* green   *1/ */
+  /* [11] = "#d8c081", /1* yellow  *1/ */
+  /* [12] = "#438f98", /1* blue    *1/ */
+  /* [13] = "#6c71c4", /1* magenta *1/ */
+  /* [14] = "#769e9e", /1* cyan    *1/ */
+  /* [15] = "#ffffff", /1* white   *1/ */
+  "#073642",  /*  0: black    */
+  "#dc322f",  /*  1: red      */
+  "#859900",  /*  2: green    */
+  "#b58900",  /*  3: yellow   */
+  "#268bd2",  /*  4: blue     */
+  "#d33682",  /*  5: magenta  */
+  "#2aa198",  /*  6: cyan     */
+  "#eee8d5",  /*  7: white    */
+  "#002b36",  /*  8: brblack  */
+  "#cb4b16",  /*  9: brred    */
+  "#586e75",  /* 10: brgreen  */
+  "#657b83",  /* 11: bryellow */
+  "#839496",  /* 12: brblue   */
+  "#6c71c4",  /* 13: brmagenta*/
+  "#93a1a1",  /* 14: brcyan   */
+  "#fdf6e3",  /* 15: brwhite  */
   /* special colors */
   [256] = "#090909", /* background */
   [257] = "#eee8d5", /* foreground */
@@ -125,10 +140,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 256;
+unsigned int defaultfg = 12;
+unsigned int defaultbg = 8;
+static unsigned int defaultcs = 14;
+static unsigned int defaultrcs = 15;
 
 /*
  * Default shape of cursor
