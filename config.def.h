@@ -242,6 +242,7 @@ static Shortcut shortcuts[] = {
 	{ XK_ANY_MOD,           XK_F6,          swapcolors,     {.i =  0} },
  	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
  	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
++	{ TERMMOD,              XK_Escape,      keyboard_select,{ 0 } },
 };
 
 /*
