@@ -260,7 +260,7 @@ static char *opt_title = NULL;
 
 static int oldbutton = 3; /* button event on startup: 3 = release */
 
-int usealtcolors = 0; /* 1 to use alternate palette */
+int usealtcolors = 1; /* 1 to use alternate palette */
 
 void
 clipcopy(const Arg *dummy)
